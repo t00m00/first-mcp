@@ -34,6 +34,11 @@ Sample:
 }
 ```
 
+### Error pattern: 東京の天気を指定した場合
+
+![claude-weather-error-tokyo](./img/screen-claude-weather-error-tokyo.png)
+
+
 # MCP Server の呼び出し条件
 
 MCPサーバーの呼び出し条件について、Claudeがどのように判断し、制御する方法について説明します。
