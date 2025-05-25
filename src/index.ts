@@ -84,8 +84,8 @@ async function makeNWSRequest<T>(url: string): Promise<T | null> {
 
   // Register weather tools
 server.tool(
-    "get-alerts",
-    "Get weather alerts for a state",
+    "get-alerts",                     // ツール名
+    "Get weather alerts for a state", // 説明
     {
       state: z.string().length(2).describe("Two-letter state code (e.g. CA, NY)"),
     },
@@ -132,8 +132,8 @@ server.tool(
   );
 
   server.tool(
-    "get-forecast",
-    "Get weather forecast for a location",
+    "get-forecast",                         // ツール名
+    "Get weather forecast for a location",  // 説明
     {
       latitude: z.number().min(-90).max(90).describe("Latitude of the location"),
       longitude: z.number().min(-180).max(180).describe("Longitude of the location"),
